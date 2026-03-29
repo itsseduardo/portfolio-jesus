@@ -108,11 +108,16 @@ const Portfolio = () => {
     return (
         <div className="min-h-screen bg-[#08080A] text-white font-sans selection:bg-blue-500/20">
 
-            {/* 1. NAVEGACIÓN (CON BOTONES ARRIBA) */}
+            {/* 1. NAVEGACIÓN (CORREGIDA PARA MÓVIL) */}
             <nav className="fixed top-0 left-0 w-full z-50 bg-[#08080A]/90 backdrop-blur-sm border-b border-gray-900">
-                <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-                    <span className="text-lg font-bold tracking-tight">{info.profile.name}</span>
-                    <div className="flex gap-6 text-sm text-gray-400 font-medium">
+                <div className="container mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+                    {/* El nombre se ajusta en móvil para no romper el layout */}
+                    <span className="text-base md:text-lg font-bold tracking-tight text-center md:text-left">
+                        Jesús E. Aguilar <span className="text-blue-500">(ItssEduardo)</span>
+                    </span>
+
+                    {/* Los botones ahora se envuelven o se desplazan horizontalmente en móvil */}
+                    <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-[10px] md:text-sm text-gray-400 font-medium uppercase tracking-widest">
                         <a href="#sobremi" className="hover:text-white transition-colors">Sobre Mí</a>
                         <a href="#experiencia" className="hover:text-white transition-colors">Experiencia</a>
                         <a href="#habilidades" className="hover:text-white transition-colors">Habilidades</a>
@@ -149,7 +154,7 @@ const Portfolio = () => {
                         </h1>
 
                         <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto md:mx-0 font-light leading-relaxed mb-12">
-                            {info.profile.summary.split('.')[0]}. {info.profile.summary.split('.')[1]}. {info.profile.summary.split('.')[2]}. {info.profile.summary.split('.')[3]}. {info.profile.summary.split('.')[4]}. {info.profile.summary.split('.')[5]}. {info.profile.summary.split('.')[6]}.   
+                            {info.profile.summary.split('.')[0]}. {info.profile.summary.split('.')[1]}. {info.profile.summary.split('.')[2]}. {info.profile.summary.split('.')[3]}. {info.profile.summary.split('.')[4]}. {info.profile.summary.split('.')[5]}. {info.profile.summary.split('.')[6]}.
                         </p>
 
                         <a href={`mailto:${info.profile.email}`} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded text-sm uppercase tracking-widest transition-all">
