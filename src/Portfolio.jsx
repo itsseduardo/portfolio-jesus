@@ -3,8 +3,8 @@ import React from 'react';
 // === DATOS ESTRUCTURADOS ACTUALIZADOS CON DEPLOYS ===
 const info = {
     profile: {
-        name: "Jesús E. Aguilar Sarria",
-        title: "Fullstack Developer & Support Engineer",
+        name: "Jesús E. Aguilar (ItssEduardo)",
+        title: "Developer & Support Engineer",
         location: "Valencia, España (Con experiencia remota global)",
         summary: "Desarrollador de software con trayectoria internacional en proyectos remotos para empresas tecnológicas de EE.UU. y Europa. Especializado en el stack moderno (React, Next.js, Node.js, FastAPI, Cloud), aplico principios SOLID y código limpio para construir soluciones escalables. Mi perfil combina una mentalidad de producto con experiencia en soporte técnico y administración, lo que me permite abordar problemas desde múltiples perspectivas con alta adaptabilidad y comunicación efectiva.",
         email: "jesus.dev8@gmail.com",
@@ -149,7 +149,7 @@ const Portfolio = () => {
                         </h1>
 
                         <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto md:mx-0 font-light leading-relaxed mb-12">
-                         {info.profile.summary.split('.')[0]}. {info.profile.summary.split('.')[1]}.
+                            {info.profile.summary.split('.')[0]}. {info.profile.summary.split('.')[1]}. {info.profile.summary.split('.')[2]}. {info.profile.summary.split('.')[3]}. {info.profile.summary.split('.')[4]}. {info.profile.summary.split('.')[5]}. {info.profile.summary.split('.')[6]}.   
                         </p>
 
                         <a href={`mailto:${info.profile.email}`} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded text-sm uppercase tracking-widest transition-all">
@@ -167,7 +167,11 @@ const Portfolio = () => {
                 </div>
                 <div className="md:col-span-8 text-gray-400 text-lg leading-relaxed space-y-6">
                     <p>
-                        Mi carrera dio un giro estratégico al poder trabajar remoto internacionalmente, colaborando con equipos de EE.UU., Irlanda, Canadá y Alemania. Esta experiencia me ha dotado de una adaptabilidad y comunicación efectiva bilingüe excepcionales. No soy solo un desarrollador; mi background incluye soporte técnico SaaS de nivel empresarial y mantenimiento de infraestructura. Esto significa que construyo software pensando en su mantenibilidad, escalabilidad y en la experiencia real del usuario final.
+                        Mi camino en la tecnología no empezó en una oficina, sino en la curiosidad por entender cómo funcionan las cosas. Nací en Colombia y, desde mis primeros pasos en el desarrollo, supe que quería que mi código no tuviera fronteras. Lo que empezó como un reto personal en la Universidad Tecnológica de Pereira, se convirtió rápidamente en una carrera internacional.
+
+                        Una de mis mayores motivaciones es la adaptabilidad. Así fue como pasé de gestionar procesos administrativos y soporte técnico a desarrollar soluciones de software para empresas en EE.UU., Irlanda, Canadá y Alemania. He aprendido que el desarrollo no se trata solo de escribir líneas de código, sino de resolver problemas reales para personas reales, sin importar en qué parte del mundo se encuentren.
+
+                        Lo que más disfruto es el aprendizaje constante. Ya sea optimizando una API en FastAPI o adquiriendo conocimientos en diversas áreas del desarrollo, mi objetivo es siempre el mismo: construir software limpio, escalable y eficiente. El mejor entorno de trabajo es aquel que me desafía a evolucionar y me permite compartir conocimiento con el equipo.
                     </p>
                     <div className="flex flex-wrap gap-2 pt-4">
                         {info.softSkills.map(skill => (
