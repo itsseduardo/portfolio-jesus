@@ -1,16 +1,40 @@
-# React + Vite
+# Portfolio — Jesús E. Aguilar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio construido con React, Vite y Tailwind CSS. El contenido de proyectos está separado de la interfaz para que pueda crecer sin crear nuevas páginas ni componentes.
 
-Currently, two official plugins are available:
+## Desarrollo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## Cómo añadir un proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Añade una captura optimizada en `public/projects/` (WebP, AVIF o SVG; proporción recomendada 16:8).
+2. Añade un objeto a `src/data/projects.js`. La lista, el selector y la vista móvil se generarán automáticamente.
 
-## Expanding the ESLint configuration
+```js
+{
+  id: '05',
+  slug: 'mi-proyecto',
+  title: 'Mi proyecto',
+  category: 'Categoría · Tipo',
+  headline: 'Una frase breve que explique su valor.',
+  description: 'Descripción verificable del producto.',
+  challenge: 'El problema que debía resolverse.',
+  contribution: 'Qué construiste o aportaste.',
+  result: 'Resultado verificable, sin métricas inventadas.',
+  stack: ['React', 'Node.js'],
+  modules: ['Módulo uno', 'Módulo dos'],
+  color: '#b9ff66',
+  image: '/projects/mi-proyecto.webp',
+  deployUrl: 'https://example.com',
+  githubUrl: 'https://github.com/usuario/repo',
+  featured: false,
+}
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+El contrato TypeScript está en `src/types/portfolio.d.ts`; el archivo de datos usa ese tipo mediante JSDoc sin obligar a migrar la app JavaScript existente.
+
+Las imágenes SVG actuales son placeholders visuales. Sustitúyelas conservando las rutas o actualiza la propiedad `image` de cada proyecto. `ayuda-sismo-colombia.webp` es una captura real del producto desplegado. La información técnica de Grupo Médico del Chocó debe completarse cuando exista una fuente verificable.
