@@ -6,5 +6,17 @@ import StackExplorer from './components/portfolio/StackExplorer';
 import Contact from './components/portfolio/Contact';
 
 export default function Portfolio() {
-  return <div className="site"><a className="skip-link" href="#work">Saltar al contenido</a><Navigation /><main><Hero /><ProjectExplorer /><Journey /><StackExplorer /></main><Contact /></div>;
+  return (
+    <div className="site">
+      <a className="skip-link" href="#work">Saltar al contenido</a>
+      <Navigation />
+      <main>
+        <Hero />
+        <ProjectExplorer />
+        <Journey />
+        <StackExplorer />
+      </main>
+      <Contact />
+    </div>
+  );
 }
