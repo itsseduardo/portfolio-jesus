@@ -56,4 +56,16 @@ export const projects = [
     color: '#ff4d4d', image: '/projects/ayuda-sismo-colombia.webp', deployUrl: 'https://ayudasismo-sandy.vercel.app/', featured: true,
     notice: 'Información aportada por la comunidad: verifícala antes de decidir o desplazarte. No sustituye a autoridades, hospitales u organismos de emergencia. Evita publicar datos sensibles y actualiza o cierra cada reporte cuando el caso se resuelva.',
   },
+  {
+    id: '06', slug: 'hogar-cerca', title: 'Hogar Cerca', category: 'Housing Access · Civic Technology',
+    headline: 'Una comunidad que abre puertas y acerca recursos para reconstruir hogares.',
+    description: 'Herramienta comunitaria gratuita que conecta en Colombia a personas que buscan vivienda, alojamiento temporal o materiales con quienes pueden ofrecerlos, donarlos o venderlos.',
+    challenge: 'Las ofertas de vivienda, los alojamientos solidarios y los materiales disponibles suelen estar dispersos entre carteles y publicaciones difíciles de encontrar cuando una familia más los necesita.',
+    contribution: 'Diseño y desarrollo de una plataforma centralizada para buscar y publicar vivienda, habitaciones, alojamiento gratuito, materiales y avisos encontrados en la calle.',
+    result: 'Un punto de encuentro público y sin intermediarios donde la comunidad puede publicar gratis, buscar por municipio y contactar directamente con quien ofrece o solicita apoyo.',
+    stack: ['Next.js', 'React', 'Supabase', 'Vercel'],
+    modules: ['Búsqueda de vivienda', 'Arriendos y habitaciones', 'Alojamiento gratuito', 'Solicitud de materiales', 'Donación y venta de materiales', 'Avisos fotografiados', 'Publicaciones propias', 'Consejos de seguridad'],
+    color: '#eb5a3c', image: '/projects/hogar-cerca.webp', deployUrl: 'https://hogar-cerca.vercel.app/', featured: true,
+    notice: 'La información es publicada por la comunidad. Verifica el inmueble, los materiales y la identidad de la otra persona antes de actuar. No envíes anticipos sin verificar ni compartas datos bancarios o documentos personales.',
+  },
 ];

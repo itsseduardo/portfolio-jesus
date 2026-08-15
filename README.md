@@ -37,4 +37,4 @@ npm run dev
 
 El contrato TypeScript está en `src/types/portfolio.d.ts`; el archivo de datos usa ese tipo mediante JSDoc sin obligar a migrar la app JavaScript existente.
 
-Las imágenes SVG actuales son placeholders visuales. Sustitúyelas conservando las rutas o actualiza la propiedad `image` de cada proyecto. `ayuda-sismo-colombia.webp` es una captura real del producto desplegado. La información técnica de Grupo Médico del Chocó debe completarse cuando exista una fuente verificable.
+Las imágenes SVG actuales son placeholders visuales. Sustitúyelas conservando las rutas o actualiza la propiedad `image` de cada proyecto. `ayuda-sismo-colombia.webp` y `hogar-cerca.webp` son capturas reales de los productos desplegados. La información técnica de Grupo Médico del Chocó debe completarse cuando exista una fuente verificable.
